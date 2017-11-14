@@ -53,7 +53,7 @@ public class EmpresaPrivada extends Empresa {
         }
         return String.format("%s\n"
                 + "Ventas:%d\n"
-                + "Sucursales%d\n"
+                + "Sucursales:%d\n"
                 + "Lista de Trabajadore\n%s",
                 super.toString(),
                 obtener_Ventas_mensual_fijo(),
