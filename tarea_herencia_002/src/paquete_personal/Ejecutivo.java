@@ -13,7 +13,7 @@ public class Ejecutivo extends Persona {
 
     private double sueldo_mensual;
 
-    public Ejecutivo(String n, String a, int e, String c, double sm) {
+    public Ejecutivo(String n, String a, int e, int c, double sm) {
         super(n, a, e, c);
 
     }
@@ -26,6 +26,7 @@ public class Ejecutivo extends Persona {
         sm = sueldo_mensual;
     }
 
+    @Override
     public String toString() {
         String c = String.format("%s\n"
                 + "sueldo:\t\t%.0f\n",

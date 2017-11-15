@@ -30,19 +30,19 @@ public class Empresa_Publica extends Empresa {
     }
 
     private double obtener_monto_total_sueldos() {
-        double st = 0;
-        double se = 0;
+        double sTra = 0;
+        double sEje = 0;
 
         Trabajador[] arregloT = obtener_Trabajadores();
         Ejecutivo[] arregloE = obtener_Ejecutivos();
         for (int i = 0; i < arregloT.length; i++) {
-            st += arregloT[i].obtener_sueldo();
+            sTra += arregloT[i].obtener_sueldo();
         }
         for (int j = 0; j < arregloE.length; j++) {
-            se += arregloE[j].obtener_Sueldo_mensual();
+            sEje += arregloE[j].obtener_Sueldo_mensual();
         }
 
-        return st + se;
+        return sTra + sEje;
     }
 
     private String obtener_estado_empresa() {
